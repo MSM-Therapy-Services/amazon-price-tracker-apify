@@ -1,6 +1,5 @@
 {
   "name": "amazon-price-tracker",
-  "type": "module",
   "version": "1.0.0",
   "description": "Track Amazon product prices automatically",
   "main": "src/main.js",
