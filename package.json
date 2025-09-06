@@ -1,5 +1,5 @@
 {
-  "name": "amazon-price-tracker",
+ const { PuppeteerCrawler } = require('crawlee');
   "version": "1.0.0",
   "description": "Track Amazon product prices automatically",
   "main": "src/main.js",
