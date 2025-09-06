@@ -1,0 +1,26 @@
+{
+  "actorSpecification": 1,
+  "name": "amazon-price-tracker",
+  "title": "Amazon Price Tracker",
+  "description": "Track Amazon product prices and get instant price updates. Monitor price changes, get product details, and export data for analysis. Perfect for deal hunters, retailers, and price comparison tools.",
+  "version": "1.0.0",
+  "meta": {
+    "templateId": "node_basic"
+  },
+  "input": "INPUT_SCHEMA.json",
+  "dockerfile": "Dockerfile",
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "Amazon Products",
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": ["url", "title", "price", "rating", "scrapedAt"]
+          }
+        }
+      }
+    }
+  }
+}
