@@ -1,5 +1,5 @@
 {
- const { PuppeteerCrawler } = require('crawlee');
+ const { PlaywrightCrawler } = require('crawlee');
   "version": "1.0.0",
   "description": "Track Amazon product prices automatically",
   "main": "src/main.js",
@@ -12,6 +12,6 @@
     "playwright": "^1.40.0"
   },
   "engines": {
-    "node": ">=18.0.0"
+ const crawler = new PlaywrightCrawler({
   }
 }
