@@ -1,0 +1,27 @@
+{
+  "title": "Amazon Price Tracker Configuration",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "productUrls": {
+      "title": "Amazon Product URLs",
+      "type": "array",
+      "description": "Enter Amazon product URLs to track prices. Example: https://www.amazon.com/dp/B08N5WRWNW",
+      "editor": "stringList",
+      "placeholderValue": "https://www.amazon.com/dp/B08N5WRWNW",
+      "items": {
+        "type": "string",
+        "pattern": "^https?://.*amazon\\."
+      }
+    },
+    "maxItems": {
+      "title": "Maximum products to track",
+      "type": "integer",
+      "description": "Limit the number of products to process (helps control costs)",
+      "default": 10,
+      "minimum": 1,
+      "maximum": 1000
+    }
+  },
+  "required": ["productUrls"]
+}
